@@ -1,0 +1,15 @@
+<div id="name">
+  <h1 style="text-align: center" ><%= @facade.market.name %></h1>
+</div>
+
+<div id="address">
+  <p style="text-align: center;"> <%= @facade.market.street %> </p>
+  <p style="text-align: center;"> <%= @facade.market.city %>, <%= @facade.market.state %> <%= @facade.market.zip %> </p>
+</div>
+ 
+<div id="vendors">
+  <p> Vendors at our Market: </p>
+  <% @facade.vendors.each do |vendor| %>
+    <p> <%= link_to "#{vendor.name}", vendor_path(vendor.id) %> <p>
+  <% end %>
+</div>

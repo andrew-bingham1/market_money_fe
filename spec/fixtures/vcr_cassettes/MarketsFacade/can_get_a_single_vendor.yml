@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/55174
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1e15ef3df052b6da4de4a48ba48c6a99"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d3d7b928-d7a7-41a6-9366-05d6f170ee9a
+      X-Runtime:
+      - '0.006800'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.62, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.62
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"55174","type":"vendor","attributes":{"name":"Wholly
+        Crepe","description":"sells sweet and savory crepes with unique flavor combinations","contact_name":"Miss
+        Virgie Heaney","contact_phone":"1-651-964-9975","credit_accepted":false}}}'
+  recorded_at: Thu, 25 May 2023 16:06:57 GMT
+recorded_with: VCR 6.1.0
